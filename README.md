@@ -17,24 +17,48 @@ O sistema é dividido em 38 módulos Fortran que cobrem:
 
 ### Movimento Browniano Geométrico (MBG)
 Utilizado para simular a trajetória de preços:
-$$ dS_t = \mu S_t dt + \sigma S_t dW_t $$
+
+$$
+dS_t = \mu S_t dt + \sigma S_t dW_t
+$$
 
 ### Modelo Black-Scholes
 Fórmula para o preço de uma opção de compra (Call):
-$$ C(S, t) = S_0 N(d_1) - K e^{-r(T-t)} N(d_2) $$
+
+$$
+C(S, t) = S_0 N(d_1) - K e^{-r(T-t)} N(d_2)
+$$
+
 Onde:
-$$ d_1 = \frac{\ln(S_0/K) + (r + \sigma^2/2)(T-t)}{\sigma\sqrt{T-t}} $$
-$$ d_2 = d_1 - \sigma\sqrt{T-t} $$
+
+$$
+d_1 = \frac{\ln(S_0/K) + (r + \sigma^2/2)(T-t)}{\sigma\sqrt{T-t}}
+$$
+
+$$
+d_2 = d_1 - \sigma\sqrt{T-t}
+$$
 
 ### Modelo Heston (Volatilidade Estocástica)
-$$ dS_t = \mu S_t dt + \sqrt{\nu_t} S_t dW_t^1 $$
-$$ d\nu_t = \kappa(\theta - \nu_t) dt + \xi \sqrt{\nu_t} dW_t^2 $$
+
+$$
+\begin{cases}
+dS_t = \mu S_t dt + \sqrt{\nu_t} S_t dW_t^1 \\
+d\nu_t = \kappa(\theta - \nu_t) dt + \xi \sqrt{\nu_t} dW_t^2
+\end{cases}
+$$
 
 ### Modelo GARCH(1,1)
-$$ \sigma_t^2 = \omega + \alpha \epsilon_{t-1}^2 + \beta \sigma_{t-1}^2 $$
+
+$$
+\sigma_t^2 = \omega + \alpha \epsilon_{t-1}^2 + \beta \sigma_{t-1}^2
+$$
 
 ### Razão de Sharpe
-$$ S_a = \frac{E[R_a - R_f]}{\sigma_a} $$
+
+$$
+S_a = \frac{E[R_a - R_f]}{\sigma_a}
+$$
 
 ## 📊 Visualizações e Resultados
 
