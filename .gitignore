@@ -5,7 +5,6 @@ bolsa_valores
 
 # Resultados e Gráficos
 resultados/
-graficos/*.png
 
 # Python extras
 __pycache__/

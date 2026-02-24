@@ -36,6 +36,19 @@ $$ \sigma_t^2 = \omega + \alpha \epsilon_{t-1}^2 + \beta \sigma_{t-1}^2 $$
 ### Razão de Sharpe
 $$ S_a = \frac{E[R_a - R_f]}{\sigma_a} $$
 
+## 📊 Visualizações e Resultados
+
+Os gráficos abaixo são gerados automaticamente a partir dos dados processados pelo motor Fortran.
+
+### 📈 Preços e Indicadores Técnicos
+![Preços e Médias Móveis](graficos/graf_01_precos_emas.png)
+
+### 🌡️ Volatilidade Condicional (GARCH)
+![Análise de Volatilidade](graficos/graf_02_volatilidade.png)
+
+### 🕸️ Matriz de Correlação e Clustering
+![Correlação de Ativos](graficos/graf_03_correlacao.png)
+
 ## 🛠️ Como Executar
 
 ### 1. Compilação do Motor Fortran
