@@ -1,0 +1,20 @@
+# Binários Fortran
+*.o
+*.mod
+bolsa_valores
+
+# Resultados e Gráficos
+resultados/
+graficos/*.png
+
+# Python extras
+__pycache__/
+*.pyc
+
+# LaTeX extras
+*.aux
+*.log
+*.pdf
+*.toc
+*.out
+*.gz
